@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="css/style.css"><!--Link CSS-->
+
+    <script src="js/scripts.js" defer></script><!--Script JS-->
+
+    <!--Link Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 & display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container"><!--Ínicio container-->
+        <div id="calc-container">
+            <h2>Calculadora de IMC</h2>
+                <form action="" id="imc-form"><!--Ínicio formulário-->
+                    <div class="form-control">
+                        <label for="height">Altura</label>
+                        <input type="text" 
+                        name="height" 
+                        id="height" 
+                        placeholder="Exemplo 1,75">
+                    </div>
+                    <div class="form-control">
+                        <label for="weight">Peso</label>
+                        <input type="text" 
+                        name="weight" 
+                        id="weight" 
+                        placeholder="Exemplo 70,5">
+                    </div>
+                    <div class="action-control"><!--Ínicio botões-->
+                        <button id="calc-btn">Calcular</button>
+                        <button id="clear-btn">Limpar</button>
+                    </div><!--Final botões-->
+                </form><!--Final formulário-->
+        </div>
+        <div id="result-container" class="hide"><!--Ínicio resultado-->
+            <p id="imc-number">Seu IMC: <span></span></p>
+            <p id="imc-info">Situação atual: <span></span></p>
+            <h3>Confira as classificações:</h3>
+            <div id="imc-table">
+                <div class="table-header">
+                    <h4>IMC</h4>
+                    <h4>Classificação</h4>
+                    <h4>Obsidade</h4>
+                </div>
+            </div>
+            <button id="back-btn">Voltar</button><!--Botão voltar-->
+        </div><!--Final resultado-->
+    </div><!--Final container-->
+    <div id="footer"><!--Direitos reservados-->
+        <p>&copy; by Humberto Luciano - 2022</p>
+    </div>
+        
+</body>
+</html>
